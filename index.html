@@ -9,7 +9,22 @@
     <h1>Hello!!!</h1>
 
     <script>
-        alert('Hi')
+let users = [
+  {id: 1, name: "Вася"},
+  {id: 2, name: "Петя"},
+  {id: 3, name: "Маша"}
+];
+let newArr = users.map((item) => {
+    if (item.id % 2 == 0) {
+        return item.name+ ': '+ item.id;
+    }
+}).filter(item => item);
+
+
+
+console.log(newArr); 
+
+
     </script>
 </body>
 </html>
