@@ -10,23 +10,32 @@
     <h1>Hello!!!</h1>
 <div></div>
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis error possimus ipsa quaerat? Officiis, officia quasi harum dolores voluptatibus omnis quia neque tempore quaerat, doloremque totam et debitis excepturi ipsum?</p>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu9ruhK0msunBIBGBAMOQauWaO16rQ45jEdg&s" alt="">
+   <img src="https://fmagazin.ru/_files/editor/images/pic/lucky_john/tejl_spinner_lucky_john_basara_tail_spin_8g_003_b.jpg" alt="">
+   
+
+
    
    <script>
-let users = [
-  {id: 1, name: "Вася"},
-  {id: 2, name: "Петя"},
-  {id: 3, name: "Маша"}
-];
-let newArr = users.map((item) => {
-    if (item.id % 2 == 0) {
-        return item.name+ ': '+ item.id;
-    }
-}).filter(item => item);
+// let users = [
+//   {id: 1, name: "Вася"},
+//   {id: 2, name: "Петя"},
+//   {id: 3, name: "Маша"}
+// ];
+// let newArr = users.map((item) => {
+//     if (item.id % 2 == 0) {
+//         return item.name+ ': '+ item.id;
+//     }
+// }).filter(item => item);
 
 
-
-console.log(newArr); 
-
+ const imgs =  document.images
+console.log(imgs)
+for (let index = 0; index <imgs.length; index++) {
+    const element =imgs[index];
+    element.style.border = '10px solid green';
+    
+}
 
     </script>
 </body>
